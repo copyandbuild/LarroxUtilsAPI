@@ -1,0 +1,7 @@
+name: LarroxUtils
+version: '1.0'
+main: dev.larrox.larroxUtils.LarroxUtils
+api-version: '1.21.1'
+load: STARTUP
+authors: [ Larrox ]
+website: https://larrox.dev/
