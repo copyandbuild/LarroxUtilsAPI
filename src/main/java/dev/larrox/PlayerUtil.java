@@ -5,12 +5,8 @@ import org.bukkit.entity.Player;
 
 public class PlayerUtil {
 
-    public CommandSender isPlayer(CommandSender sender) {
-        if (sender instanceof Player player) {
-            return player;
-        }
-
-        return sender;
+    public static boolean isPlayer(CommandSender sender) {
+        return sender instanceof Player;
     }
 
 }
