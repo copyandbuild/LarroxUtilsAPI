@@ -16,9 +16,9 @@
 
     <distributionManagement>
         <repository>
-            <id>larroxutils-dev-builds</id>
+            <id>larroxutils-larrox-builds</id>
             <name>LarroxUtilsAPI</name>
-            <url>https://repo.larrox.dev/dev-builds</url>
+            <url>https://repo.larrox.dev/larrox-builds</url>
         </repository>
     </distributionManagement>
 
