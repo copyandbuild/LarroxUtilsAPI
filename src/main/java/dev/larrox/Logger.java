@@ -4,10 +4,6 @@ import org.bukkit.Bukkit;
 
 public class Logger {
 
-    public static void log (String message) {
-        Bukkit.getLogger().info( "[LarroxUtilsAPI] " + message);
-    }
-
     public static void info (String message) {
         Bukkit.getLogger().info( "[LarroxUtilsAPI] " + message);
     }
