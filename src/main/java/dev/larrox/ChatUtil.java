@@ -4,6 +4,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class ChatUtil {
 
     /**
@@ -87,5 +90,26 @@ public class ChatUtil {
                 net.md_5.bungee.api.ChatMessageType.ACTION_BAR,
                 new net.md_5.bungee.api.chat.TextComponent(color(message))
         );
+    }
+
+    /**
+     * Verarbeitet Hexcode Strings, returnt die "Finale" Nachricht.
+     *
+     * @param message Nachricht mit Hexcodes (&#)
+     */
+    public String hexColor(String message) {
+        Pattern pattern = Pattern.compile("(?i)&\\#([A-Fa-f0-9]{6})");
+        Matcher matcher = pattern.matcher(message);
+        StringBuffer sb = new StringBuffer();
+        while (matcher.find()) {
+            String hex = matcher.group(1);
+            StringBuilder replacement = new StringBuilder("§x");
+            for (char c : hex.toCharArray()) {
+                replacement.append("§").append(c);
+            }
+            matcher.appendReplacement(sb, replacement.toString());
+        }
+        matcher.appendTail(sb);
+        return sb.toString().replace("&", "§");
     }
 }
