@@ -1,7 +1,6 @@
 package dev.larrox;
 
 import org.bukkit.OfflinePlayer;
-import org.bukkit.block.Skull;
 import org.bukkit.inventory.meta.SkullMeta;
 
 public class SkullUtil {
