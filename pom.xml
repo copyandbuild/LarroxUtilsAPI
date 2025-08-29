@@ -6,7 +6,7 @@
 
     <groupId>dev.larrox</groupId>
     <artifactId>LarroxUtilsAPI</artifactId>
-    <version>1.0.2</version>
+    <version>1.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -16,10 +16,15 @@
 
     <distributionManagement>
         <repository>
-            <id>larroxutils-dev-builds</id>
-            <name>LarroxUtilsAPI</name>
-            <url>https://repo.larrox.dev/dev-builds</url>
+            <id>larroxutils-releases</id>
+            <name>LarroxUtilsAPI Releases</name>
+            <url>https://repo.larrox.dev/releases</url>
         </repository>
+        <snapshotRepository>
+            <id>larroxutils-dev-builds</id>
+            <name>LarroxUtilsAPI Devbuilds</name>
+            <url>https://repo.larrox.dev/dev-builds</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <repositories>
