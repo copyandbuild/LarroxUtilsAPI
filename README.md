@@ -1,2 +1,1 @@
-# PLEASE DO NOT USE THESE BUILDS ON YOUR PRODUCTION-SERVER! THESE BUILDS ARE UNSTABLE!! 
-(I can't forbid you, I'm just recommending it.)
+
